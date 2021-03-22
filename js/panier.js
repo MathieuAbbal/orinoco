@@ -33,7 +33,7 @@ if (basket.length > 0) {
   // HTML panier vide
   addHtml.innerHTML = `
         <div class="card empty">
-            <img class="content__img" alt="photo de l'article" src="/img/empty.png" />
+            <img class="content__img" alt="photo de l'article" src="img/empty.png" />
             <p class="text__empty ">Votre panier est vide </p>
         </div>`;
 }
