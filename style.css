@@ -209,14 +209,14 @@ a {
   font-size: 25px;
   line-height: 134.2%;
   text-align: center;
-  margin: 0;
-  margin: 50px 20px 0 20px;
+
+  margin: 50px 20px 20px 20px;
   font-weight: 900;
 }
 .btn {
   display: flex;
   justify-content: center;
-  margin: 70px auto 0 auto;
+  margin: 70px auto 30px auto;
   width: 320px;
 }
 .btn__link {
@@ -299,7 +299,7 @@ a {
 
 .content__btn {
   font-size: 0.85em;
-  color: #7c747c;
+  color: #59366a;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.15em;
@@ -493,11 +493,7 @@ footer {
   .footer__networks {
     width: 50%;
   }
-  .footerproduct {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
+
   .navbar__link {
     display: flex;
     justify-content: center;
