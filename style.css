@@ -464,7 +464,7 @@ footer {
   margin-top: 300px;
 }
 /*mediaQuery*/
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .content {
     display: flex;
     justify-content: space-around;
@@ -475,6 +475,8 @@ footer {
     width: 33%;
     margin: 20px auto;
   }
+}
+@media (min-width: 1024px) {
   .empty {
     width: 20%;
   }
