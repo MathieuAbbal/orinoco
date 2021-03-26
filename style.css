@@ -537,3 +537,12 @@ footer {
     margin: 10px 0 10px 0;
   }
 }
+@media (orientation: landscape) {
+  .banner {
+    height: auto;
+    width: auto;
+  }
+  .btn {
+    padding: 20px;
+  }
+}
