@@ -59,3 +59,16 @@ function ajoutLocalStorage(data) {
   
     console.log("le panier est vide");
   }
+  /**
+ * Fonction prix total Panier
+*/
+function calculPrixPanier() {
+    //on récupére la valeur de la clé passée en paramètre dans la variable itemPrice sous forme d'objet JavaScript 
+    //on applique une fonction qui traite chaque valeur pour la reduire à une seule en les ajoutant 
+    let basket = recuperationPanier()
+    let totalPriceItem = basket.reduce((accumulator, item) => {
+      return accumulator + item.totalPrice;
+    }, 0);
+    //on retourne la valeur totale
+    return totalPriceItem;
+  }

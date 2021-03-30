@@ -245,7 +245,7 @@ a {
 .description {
   font-weight: 500;
   color: #626262;
-  text-align: center;
+  text-align: justify;
   letter-spacing: 0.05em;
   margin: 32px 0;
 }
@@ -406,12 +406,19 @@ label {
   align-items: center;
   margin: 0;
   text-align: center;
+  padding: 10px;
 }
-#numCom {
-  display: flex;
+#numCom,
+#finalPrice {
   color: #59366a;
+  display: contents;
 }
-
+.fa-check-circle {
+  display: flex;
+  justify-content: center;
+  color: green;
+  font-size: x-large;
+}
 /*Footer*/
 footer {
   display: flex;
