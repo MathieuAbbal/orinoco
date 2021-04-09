@@ -20,11 +20,11 @@ if (basket.length > 0) {
                 </div>
 
                 <div class="price">
-                    <p class="prixProduitPanier">Prix : <span>${objet.totalPrice} €</span></p>   
+                    <p class="prixProduitPanier">Prix : <span>${objet.totalPrice*objet.quantite} €</span></p>   
                 </div>
 
                 <div>
-                    <button class="btn-success" onclick="supprimeLocalStorage('${objet._id}')">Supprimer</button>  
+                    <button class="btn-success" onclick="supprimeLocalStorage('${objet.lens}')">Supprimer</button>  
                 </div>
             </div>
             `;
