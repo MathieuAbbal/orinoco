@@ -20,7 +20,7 @@ if (basket.length > 0) {
                 </div>
 
                 <div class="price">
-                    <p class="prixProduitPanier">Prix : <span>${objet.totalPrice*objet.quantite} €</span></p>   
+                    <p class="prixProduitPanier">Prix : <span>${objet.quantite*objet.price} €</span></p>   
                 </div>
 
                 <div>
