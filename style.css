@@ -409,15 +409,23 @@ label {
   padding: 10px;
 }
 #numCom,
+#nomCom,
 #finalPrice {
   color: #59366a;
+  font-weight: 900;
   display: contents;
+}
+#numCom {
+  display: block;
 }
 .fa-check-circle {
   display: flex;
   justify-content: center;
   color: green;
   font-size: x-large;
+}
+.centre {
+  text-align: center;
 }
 /*Footer*/
 footer {

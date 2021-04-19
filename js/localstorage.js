@@ -26,6 +26,7 @@ function ajoutLocalStorage(data) {
     if (basket.some((p) => p._id === data._id && p.lens === data.lens)) {
         let product = basket.find((p) => p._id === data._id && p.lens === data.lens);
         product.quantite = parseInt(product.quantite) + parseInt(data.quantite);
+        product.totalPrice = parseInt(product.price)+ parseInt(data.price)
         localStorage.setItem("basket", JSON.stringify(basket));
 
     } else {

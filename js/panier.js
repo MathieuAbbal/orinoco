@@ -20,7 +20,7 @@ if (basket.length > 0) {
                 </div>
 
                 <div class="price">
-                    <p class="prixProduitPanier">Prix : <span>${objet.quantite*objet.price} €</span></p>   
+                    <p class="prixProduitPanier">Prix : <span>${objet.price*objet.quantite} €</span></p>   
                 </div>
 
                 <div>
@@ -96,7 +96,7 @@ form.addEventListener("submit", (e) => {
             city: city.value,
             email: mail.value,
         };
-
+        localStorage.setItem("contact", JSON.stringify(contact));
         // crée donnees comme objet contact + tableau products
         const donnees = { contact, products };
 
