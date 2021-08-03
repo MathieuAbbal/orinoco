@@ -563,3 +563,21 @@ footer {
     padding: 20px;
   }
 }
+body {
+  background: #FFF url("https://i.imgur.com/KheAuef.png") top left repeat-x;
+  font-family: 'Alex Brush', cursive !important;
+}
+
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.5);
+  background-image: url("https://i.stack.imgur.com/MnyxU.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+}
