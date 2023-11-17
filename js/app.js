@@ -1,6 +1,6 @@
 const addHtml = document.getElementById('content'); //récupère id=content
 
-fetch(' https://hebergementbackendorinoco.herokuapp.com/api/cameras') //fetch de l'API
+fetch('https://hebergementbackendorinoco.herokuapp.com/api/cameras') //fetch de l'API
   .then(response => { // me renvoie une première prommesse
     if (response.ok) {
       return response.json() // Si response ok, retourne un objet json
