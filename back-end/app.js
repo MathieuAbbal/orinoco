@@ -8,6 +8,9 @@ const teddyRoutes = require('./routes/teddy');
 const furnitureRoutes = require('./routes/furniture');
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
+
 
 mongoose.connect(
   'mongodb+srv://will:nAcmfCoHGDgzrCHG@cluster0-pme76.mongodb.net/test?retryWrites=true',
@@ -27,7 +30,7 @@ app.use(bodyParser.json());
 
 
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://mathieuabbal.github.io');  // Autoriser uniquement votre domaine
+  res.setHeader('Access-Control-Allow-Origin', '*'); // Autorise toutes les origines
   res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content, Accept, Content-Type, Authorization');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
   res.setHeader('Access-Control-Allow-Credentials', 'true');
